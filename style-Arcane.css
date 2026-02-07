@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------body-------- */
+body {
+    background:
+        radial-gradient(circle at top, #1b2a3a, #0a0f14 70%);
+    color: #d6d3c9;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+}
+
+/* --------hr tag-------- */
+hr {
+    border: none;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        transparent,
+        rgba(197, 170, 106, 0.6),
+        transparent
+    );
+    margin: 20px 0;
+}
