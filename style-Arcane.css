@@ -208,3 +208,23 @@ footer p {
         flex-direction: column;
     }
 }
+.theme-switcher {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.theme-switcher button {
+    background: transparent;
+    color: inherit;
+    border: 1px solid currentColor;
+    padding: 6px 10px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.theme-switcher button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
