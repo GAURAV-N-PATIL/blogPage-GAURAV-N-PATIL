@@ -116,7 +116,11 @@ article h2 {
 article p {
     color: #cfd6dd;
 }
-
+article:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: 0.3s ease-in-out;
+}
 /* --------Read more button-------- */
 .read-more {
     display: inline-block;
@@ -203,10 +207,9 @@ footer p {
 .social-links a:hover {
     color: #e6d8a8;
 }
-@media (max-width: 900px) {
-    .BG {
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
+  .BG { flex-direction: column; }
+  nav ul { flex-direction: column; gap: 12px; }
 }
 .theme-selector {
     margin-top: 15px;
@@ -232,4 +235,11 @@ footer p {
   border-radius: 8px;
   margin-bottom: 18px;
   opacity: 0.95;
+}
+article {
+  opacity: 0;
+  animation: fadeIn 0.8s forwards;
+}
+@keyframes fadeIn {
+  to { opacity: 1; }
 }
