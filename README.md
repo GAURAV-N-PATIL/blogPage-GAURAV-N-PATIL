@@ -86,7 +86,7 @@ This keeps the design modular and easy to extend.
 ## 📸 Screenshot
 
 *screenshot of the final output*
-
+![screen short for cyberpunk theme](<Screenshot 2026-02-08 014110.png>) ![screen short for arcane theme](<Screenshot 2026-02-08 014048.png>)
 ---
 
 ## 🚀 How to Run the Project
