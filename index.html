@@ -21,9 +21,11 @@
                 <li><a href="#" target="_blank">Contact</a></li>
             </ul>
         </nav>
-        <div class="theme-switcher">
-        <button onclick="setTheme('arcane')">Arcane</button>
-        <button onclick="setTheme('cyberpunk')">Cyberpunk</button>
+        <div class="theme-selector">
+            <select onchange="setTheme(this.value)">
+                <option value="Arcane">Arcane</option>
+                <option value="cyberpunk">Cyberpunk</option>
+            </select>
         </div>
     </header>
     <div class="BG">

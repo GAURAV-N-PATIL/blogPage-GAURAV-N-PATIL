@@ -177,23 +177,20 @@ footer p {
         flex-direction: column;
     }
 }
-.theme-switcher {
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
+.theme-selector {
+    margin-top: 15px;
 }
 
-.theme-switcher button {
+.theme-selector select {
     background: transparent;
     color: inherit;
-    border: 1px solid currentColor;
+    border: 1px solid rgba(197, 170, 106, 0.6);
     padding: 6px 10px;
-    margin-left: 5px;
-    cursor: pointer;
     font-family: inherit;
+    cursor: pointer;
 }
 
-.theme-switcher button:hover {
-    background: rgba(255, 255, 255, 0.1);
+.theme-selector select option {
+    background: #0a0f14;
+    color: #e6d8a8;
 }
