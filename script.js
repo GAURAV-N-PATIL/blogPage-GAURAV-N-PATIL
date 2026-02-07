@@ -1,11 +1,7 @@
-function setTheme(themeName) {
-    const themeLink = document.getElementById("theme-style");
-    themeLink.href = `themes/${themeName}.css`;
-    localStorage.setItem("selectedTheme", themeName);
+function setTheme(theme) {
+    document.getElementById("theme-style").href = `style-${theme}.css`;
 }
-window.onload = function () {
-    const savedTheme = localStorage.getItem("selectedTheme");
-    if (savedTheme) {
-        setTheme(savedTheme);
-    }
+
+window.onload = () => {
+    setTheme("Arcane"); // default theme
 };
