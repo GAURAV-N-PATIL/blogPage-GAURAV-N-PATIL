@@ -1,16 +1,26 @@
+/* Cyberpunk CSS Theme */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Share+Tech+Mono&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* --------Body-------- */
 body {
     background: radial-gradient(circle at top, #0f2027, #000);
     color: #e0f7fa;
     font-family: 'Share Tech Mono', monospace;
     line-height: 1.6;
 }
+/* --------Horizontal line-------- */
 hr {
     border: none;
     height: 1px;
     background: linear-gradient(to right, transparent, #00ffff, transparent);
     margin: 15px 0;
 }
+/* --------Header-------- */
 header {
     padding: 20px;
     border-bottom: 2px solid #00ffff;
@@ -21,6 +31,7 @@ header {
     color: #ff00ff;
     text-shadow: 0 0 10px #ff00ff;
 }
+/* --------Navigation-------- */
 nav ul {
     display: flex;
     gap: 20px;
@@ -48,6 +59,7 @@ nav a::after {
 nav a:hover::after {
     width: 100%;
 }
+/* --------Main layout-------- */
 .BG {
     display: flex;
     max-width: 1200px;
@@ -55,6 +67,7 @@ nav a:hover::after {
     gap: 25px;
     padding: 10px;
 }
+/* --------Blog Content-------- */
 .content {
     flex: 3;
 }
@@ -80,6 +93,7 @@ article h2 {
 article p {
     color: #cfd8dc;
 }
+/* --------Button-------- */
 .read-more {
     display: inline-block;
     margin-top: 15px;
@@ -97,6 +111,7 @@ article p {
     transform: translateY(-2px);
     box-shadow: 0 0 20px #ff00ff;
 }
+/* --------Side bar-------- */
 .sidebar {
     flex: 1;
     background: rgba(5, 10, 20, 0.9);
@@ -126,6 +141,7 @@ article p {
 .sidebar a:hover {
     color: #00ffff;
 }
+/* --------Search Input-------- */
 .sidebar input {
     width: 100%;
     padding: 8px;
@@ -135,6 +151,7 @@ article p {
     outline: none;
     margin-bottom: 15px;
 }
+/* --------footer-------- */
 footer {
     margin-top: 40px;
     padding: 20px;
@@ -155,7 +172,6 @@ footer p {
 .social-links a:hover {
     color: #ff00ff;
 }
-
 @media (max-width: 900px) {
     .BG {
         flex-direction: column;
