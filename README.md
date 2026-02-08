@@ -60,13 +60,18 @@ BlogPage-GauravPatil/
 
 *screenshot of the final output*<br>
 SIDE BAR
+
 ![Blog-Page side bar](<Screenshot 2026-02-08 131748.png>) 
+
 BLOG PAGE Screenshot1
-![Blog-Page](<Screenshot 2026-02-08 131710.png>) 
+![Blog-Page](<Screenshot 2026-02-08 131710.png>)
+
 BLOG PAGE Screenshot2
-![Blog-Page](<Screenshot 2026-02-08 131725.png>) 
+![Blog-Page](<Screenshot 2026-02-08 131725.png>)
+
 BlOG PAGE Screenshot3
 ![Blog-Page](<Screenshot 2026-02-08 131733.png>)
+
 ---
 
 ## 🚀 How to Run the Project
