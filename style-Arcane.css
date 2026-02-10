@@ -414,3 +414,115 @@ article:nth-of-type(3) { animation-delay: 0.4s; }
     transform: translateY(0);
   }
 }
+.read-more,
+.readmore,
+a.read-more,
+button.read-more {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+.read-more:hover,
+.readmore:hover,
+a.read-more:hover,
+button.read-more:hover {
+  background-color: rgba(255, 255, 255, 0.18); /* soft thin light */
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+/* ---- Article Hover ---- */
+article:hover {
+  background-color: rgba(255, 255, 255, 0.12); /* thin soft light */
+  transform: translateY(-4px);
+  box-shadow: 0 8px 22px rgba(255, 255, 255, 0.18);
+}
+
+/* Accessibility (keyboard users) */
+article:focus-within {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+article:focus-within {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 4px;
+}
+article:hover {
+  transform: translate3d(0, -6px, 0);
+}
+article::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle at top left,
+    rgba(255, 255, 255, 0.25),
+    transparent 60%
+  );
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  pointer-events: none;
+}
+
+article:hover::before {
+  opacity: 1;
+}
+article {
+  position: relative;
+  border-radius: 14px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Strong, visible hover */
+article:hover {
+  background-color: rgba(255, 255, 255, 0.22);
+  transform: scale(1.05) translateY(-4px);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.85),
+    0 0 35px rgba(255, 215, 120, 0.45);
+  z-index: 20;
+}
+/* Parent gives depth */
+.blogpage {
+  perspective: 1000px;
+}
+
+/* Article base */
+article {
+  position: relative;
+  border-radius: 14px;
+  transform-style: preserve-3d;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background-color 0.4s ease;
+}
+
+/* Y-axis hover */
+article:hover {
+  background-color: rgba(255, 255, 255, 0.18);
+  transform: rotateY(10deg) scale(1.04);
+  box-shadow:
+    0 20px 50px rgba(0, 0, 0, 0.85),
+    0 0 30px rgba(255, 215, 120, 0.35);
+}
+article > * {
+  transition: transform 0.3s ease;
+}
+
+article:hover > * {
+  transform: translateY(-6px);
+}
+article:hover .article-content {
+  transform: translateY(-6px) scale(1.02);
+}
+
