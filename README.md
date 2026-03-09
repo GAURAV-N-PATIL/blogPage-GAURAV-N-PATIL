@@ -1,7 +1,7 @@
 # blogPage-GAURAV-N-PATIL
 ---
 
-# 🌐 Simple Blog Page – HTML, CSS & JavaScript
+# 🌐 Simple Blog Page – HTMl and CSS
 
 A stylish and responsive **Simple Blog Page** built using **HTML and  CSS**.
 The project focuses on clean layout design, semantic HTML, and user experience — all without using any frameworks.
